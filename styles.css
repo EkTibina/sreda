@@ -92,6 +92,18 @@
     --font-family-accent:'gilroy-regular', sans-serif;
     --container-padding-x: 15px;
   }
+  .visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    white-space: nowrap !important;
+    clip-path: inset(100%) !important;
+    clip: rect(0 0 0 0) !important;
+    overflow: hidden !important;
+  }
   body {
     font-family: var(--font-family-base);
     background-color: var(--color-light-alternate);
@@ -111,19 +123,11 @@
   }
   .banner-title {
     display: flex;
-    text-align: center;
     justify-content: center;
-  }
-  .banner-title::after {
-    content: '';
-    margin-top: 235px;
-    width: 450px;
-    height: 250px;
+    margin: 250px auto;
+    width: auto;
+    height: 700px;
     background: url('./icons/logo.svg') center/contain no-repeat;
-  }
-  .banner-subtitle {
-    text-align: center;
-    margin-bottom: 200px;
   }
   a {
     color: var(--color-dark);
@@ -136,16 +140,6 @@
     font-size: 45px;
     line-height: 115%;
   }
-  h1 {
-    font-family: var(--font-family-accent);
-    font-size: 410px;
-    font-weight: 400;
-    color: var(--color-dark);
-  }
-  h2 {
-    font-size: 200px;
-    color: var(--color-dark);
-  }
   .sreda {
     display: grid;
     grid-template-columns: 1fr 1fr; 
@@ -155,7 +149,7 @@
   .sreda-images {
     margin: 100px 200px;
   }
-  h3 {
+  h2 {
     font-size: 90px;
     color: var(--color-dark);
     margin: 100px;
@@ -171,7 +165,7 @@
     background-color: var(--color-light-alternate);
     border-bottom: 5px solid var(--color-dark);
   }
-  h4 {
+  h3 {
     font-size: 90px;
     color: var(--color-dark);
     margin: 100px 100px 100px 200px;
@@ -188,6 +182,9 @@
     margin-left: 100px;
     margin-bottom: 100px;
     padding-inline: 110px;
+  }
+  img {
+    
   }
   .menu {
     display: grid;
@@ -218,7 +215,7 @@
   .address-item::before {
     color: #DA8334;
   }
-  h5 {
+  h4 {
     font-size: 90px;
     color: var(--color-dark);
     margin: 100px;
@@ -235,44 +232,3 @@
     margin-bottom: 100px;
   }
 
-@media (max-width: 1919px) {
-  .sreda-images {
-    margin: 50px 100px;
-  }
-  h3 {
-    margin: 50px;
-  }
-  .sreda-content {
-    margin-left: 50px;
-    margin-right: 100px;
-  }
-  h4 {
-    margin: 50px 50px 50px 100px;
-  }
-  .bonus-system-content {
-    margin-left: 100px;
-  }
-  .bonus-system-images {
-    margin: 50px;
-  }
-  .bonus-system-button {
-    margin-left: 50px;
-    margin-bottom: 50px;
-    padding-inline: 110px;
-  }
-  .menu {
-    grid-template-columns: 20% 80%;
-  }
-  .menu-item {
-    margin-top: 100px;
-  }
-  .menu-imade {
-    margin: 100px 50px;
-  }
-  h5 {
-    margin: 50px;
-  }
-}
-@media (max-width: 1500px) {
-
-}
